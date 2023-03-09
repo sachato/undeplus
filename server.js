@@ -9,10 +9,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-let a = 1
-while(true){
-    a = a*100
-}
+
 
 // PARAM ROUTER
 /******************************/
