@@ -9,11 +9,16 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+let a = 1
+while(true){
+    a = a*100
+}
+
 // PARAM ROUTER
 /******************************/
 /*** Mise en place du routage */
 
-app.get('/', (req, res) = res.send(`COUCOU LES MICSI - ---------------------------`))
+app.get('/', (req, res) => res.send(`COUCOU LES MICSI - ---------------------------`))
 
 
 app.get('*', (req, res) => res.status(501).send('What the hell are you doing !?!'))
