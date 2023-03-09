@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }))
 /******************************/
 /*** Mise en place du routage */
 
-app.get('/', (req, res) => res.send(`I'm online. All is OK !`))
+app.get('/', (req, res) => res.send(`COUCOU LES MICSI`))
 
 
 app.get('*', (req, res) => res.status(501).send('What the hell are you doing !?!'))
