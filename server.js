@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }))
 /******************************/
 /*** Mise en place du routage */
 
-app.get('/', (req, res) => res.send(`Couxou les CDA22 !! TEST OK`))
+app.get('/', (req, res) => res.send(`Couxou les CDA22 !! TEST OK 2`))
 
 
 app.get('*', (req, res) => res.status(501).send('What the hell are you doing !?!'))
