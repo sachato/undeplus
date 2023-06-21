@@ -1,6 +1,6 @@
 FROM node:13
 
-ADD ./app
+ADD . /app
 WORKDIR /app
 
 RUN npm install
